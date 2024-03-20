@@ -10,6 +10,7 @@
 		83B23E252BAADB3F00AAF263 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B23E242BAADB3F00AAF263 /* Launch Screen.storyboard */; };
 		83B23E272BAAE89800AAF263 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B23E262BAAE89800AAF263 /* UIExtension.swift */; };
 		83B23E292BAAFD4900AAF263 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B23E282BAAFD4900AAF263 /* RoundButton.swift */; };
+		83B23E2B2BAAFF9000AAF263 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B23E2A2BAAFF9000AAF263 /* SignInView.swift */; };
 		83CC17AF2BAAC99200221970 /* LotsAndHotsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC17AE2BAAC99200221970 /* LotsAndHotsApp.swift */; };
 		83CC17B32BAAC99300221970 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CC17B22BAAC99300221970 /* Assets.xcassets */; };
 		83CC17B62BAAC99300221970 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CC17B52BAAC99300221970 /* Preview Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		83B23E242BAADB3F00AAF263 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		83B23E262BAAE89800AAF263 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 		83B23E282BAAFD4900AAF263 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		83B23E2A2BAAFF9000AAF263 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		83CC17AB2BAAC99200221970 /* LotsAndHots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LotsAndHots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CC17AE2BAAC99200221970 /* LotsAndHotsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotsAndHotsApp.swift; sourceTree = "<group>"; };
 		83CC17B22BAAC99300221970 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				83CC17E72BAAD19B00221970 /* WelcomeView.swift */,
+				83B23E2A2BAAFF9000AAF263 /* SignInView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 			files = (
 				83B23E292BAAFD4900AAF263 /* RoundButton.swift in Sources */,
 				83CC17AF2BAAC99200221970 /* LotsAndHotsApp.swift in Sources */,
+				83B23E2B2BAAFF9000AAF263 /* SignInView.swift in Sources */,
 				83B23E272BAAE89800AAF263 /* UIExtension.swift in Sources */,
 				83CC17E82BAAD19B00221970 /* WelcomeView.swift in Sources */,
 			);

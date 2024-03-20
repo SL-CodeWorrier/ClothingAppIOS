@@ -34,10 +34,14 @@ struct WelcomeView: View {
                     .multilineTextAlignment(.center)
                     .padding(.bottom, 20)
                 
-                RoundButton(title: "Get Started") {
-                    
+                NavigationLink {
+                    SignInView()
+                } label: {
+                    RoundButton(title: "Get Started") {
+                        
+                    }
                 }
-                
+
                 Spacer()
                     .frame(height: 80)
             }
@@ -55,7 +59,9 @@ struct WelcomeView: View {
 
 struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
-        WelcomeView()
+        NavigationView {
+            WelcomeView()
+        }
     }
 }
 
