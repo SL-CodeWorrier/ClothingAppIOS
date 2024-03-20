@@ -1,0 +1,24 @@
+{
+  "images" : [
+    {
+      "filename" : "icon-jersey.png",
+      "idiom" : "universal"
+    },
+    {
+      "filename" : "icon-jersey@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "unassigned" : true
+    },
+    {
+      "filename" : "icon-jersey@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x",
+      "unassigned" : true
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

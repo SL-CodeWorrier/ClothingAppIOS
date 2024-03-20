@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83B23E252BAADB3F00AAF263 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B23E242BAADB3F00AAF263 /* Launch Screen.storyboard */; };
+		83B23E272BAAE89800AAF263 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B23E262BAAE89800AAF263 /* UIExtension.swift */; };
+		83B23E292BAAFD4900AAF263 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B23E282BAAFD4900AAF263 /* RoundButton.swift */; };
 		83CC17AF2BAAC99200221970 /* LotsAndHotsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC17AE2BAAC99200221970 /* LotsAndHotsApp.swift */; };
-		83CC17B12BAAC99200221970 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC17B02BAAC99200221970 /* ContentView.swift */; };
 		83CC17B32BAAC99300221970 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CC17B22BAAC99300221970 /* Assets.xcassets */; };
 		83CC17B62BAAC99300221970 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CC17B52BAAC99300221970 /* Preview Assets.xcassets */; };
 		83CC17C02BAAC99300221970 /* LotsAndHotsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC17BF2BAAC99300221970 /* LotsAndHotsTests.swift */; };
 		83CC17CA2BAAC99300221970 /* LotsAndHotsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC17C92BAAC99300221970 /* LotsAndHotsUITests.swift */; };
 		83CC17CC2BAAC99300221970 /* LotsAndHotsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC17CB2BAAC99300221970 /* LotsAndHotsUITestsLaunchTests.swift */; };
+		83CC17DD2BAACDE800221970 /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83CC17D92BAACDE800221970 /* Gilroy-SemiBold.ttf */; };
+		83CC17DE2BAACDE800221970 /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83CC17DA2BAACDE800221970 /* Gilroy-Regular.ttf */; };
+		83CC17DF2BAACDE800221970 /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83CC17DB2BAACDE800221970 /* Gilroy-Bold.ttf */; };
+		83CC17E02BAACDE800221970 /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83CC17DC2BAACDE800221970 /* Gilroy-Medium.ttf */; };
+		83CC17E82BAAD19B00221970 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC17E72BAAD19B00221970 /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		83B23E242BAADB3F00AAF263 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		83B23E262BAAE89800AAF263 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		83B23E282BAAFD4900AAF263 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		83CC17AB2BAAC99200221970 /* LotsAndHots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LotsAndHots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CC17AE2BAAC99200221970 /* LotsAndHotsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotsAndHotsApp.swift; sourceTree = "<group>"; };
-		83CC17B02BAAC99200221970 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		83CC17B22BAAC99300221970 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83CC17B52BAAC99300221970 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		83CC17BB2BAAC99300221970 /* LotsAndHotsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LotsAndHotsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +53,12 @@
 		83CC17C52BAAC99300221970 /* LotsAndHotsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LotsAndHotsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CC17C92BAAC99300221970 /* LotsAndHotsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotsAndHotsUITests.swift; sourceTree = "<group>"; };
 		83CC17CB2BAAC99300221970 /* LotsAndHotsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotsAndHotsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		83CC17D92BAACDE800221970 /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
+		83CC17DA2BAACDE800221970 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
+		83CC17DB2BAACDE800221970 /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
+		83CC17DC2BAACDE800221970 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
+		83CC17E12BAACF8100221970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		83CC17E72BAAD19B00221970 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +109,16 @@
 		83CC17AD2BAAC99200221970 /* LotsAndHots */ = {
 			isa = PBXGroup;
 			children = (
+				83CC17E52BAAD13700221970 /* UICommon */,
+				83CC17E42BAAD0FC00221970 /* ViewModel */,
+				83CC17E32BAAD0EC00221970 /* Model */,
+				83CC17E22BAAD0BD00221970 /* View */,
+				83CC17E12BAACF8100221970 /* Info.plist */,
+				83CC17D82BAAC9F700221970 /* Font */,
 				83CC17AE2BAAC99200221970 /* LotsAndHotsApp.swift */,
-				83CC17B02BAAC99200221970 /* ContentView.swift */,
 				83CC17B22BAAC99300221970 /* Assets.xcassets */,
 				83CC17B42BAAC99300221970 /* Preview Content */,
+				83B23E242BAADB3F00AAF263 /* Launch Screen.storyboard */,
 			);
 			path = LotsAndHots;
 			sourceTree = "<group>";
@@ -125,6 +146,56 @@
 				83CC17CB2BAAC99300221970 /* LotsAndHotsUITestsLaunchTests.swift */,
 			);
 			path = LotsAndHotsUITests;
+			sourceTree = "<group>";
+		};
+		83CC17D82BAAC9F700221970 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				83CC17DB2BAACDE800221970 /* Gilroy-Bold.ttf */,
+				83CC17DC2BAACDE800221970 /* Gilroy-Medium.ttf */,
+				83CC17DA2BAACDE800221970 /* Gilroy-Regular.ttf */,
+				83CC17D92BAACDE800221970 /* Gilroy-SemiBold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		83CC17E22BAAD0BD00221970 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83CC17E62BAAD17600221970 /* Login */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83CC17E32BAAD0EC00221970 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		83CC17E42BAAD0FC00221970 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		83CC17E52BAAD13700221970 /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+				83B23E262BAAE89800AAF263 /* UIExtension.swift */,
+				83B23E282BAAFD4900AAF263 /* RoundButton.swift */,
+			);
+			path = UICommon;
+			sourceTree = "<group>";
+		};
+		83CC17E62BAAD17600221970 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				83CC17E72BAAD19B00221970 /* WelcomeView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +303,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				83CC17B62BAAC99300221970 /* Preview Assets.xcassets in Resources */,
+				83CC17E02BAACDE800221970 /* Gilroy-Medium.ttf in Resources */,
+				83CC17DD2BAACDE800221970 /* Gilroy-SemiBold.ttf in Resources */,
+				83CC17DF2BAACDE800221970 /* Gilroy-Bold.ttf in Resources */,
 				83CC17B32BAAC99300221970 /* Assets.xcassets in Resources */,
+				83CC17DE2BAACDE800221970 /* Gilroy-Regular.ttf in Resources */,
+				83B23E252BAADB3F00AAF263 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +333,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83CC17B12BAAC99200221970 /* ContentView.swift in Sources */,
+				83B23E292BAAFD4900AAF263 /* RoundButton.swift in Sources */,
 				83CC17AF2BAAC99200221970 /* LotsAndHotsApp.swift in Sources */,
+				83B23E272BAAE89800AAF263 /* UIExtension.swift in Sources */,
+				83CC17E82BAAD19B00221970 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,11 +502,15 @@
 				DEVELOPMENT_ASSET_PATHS = "\"LotsAndHots/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LotsAndHots/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -436,9 +518,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LotsAndHots.LotsAndHots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -452,11 +538,15 @@
 				DEVELOPMENT_ASSET_PATHS = "\"LotsAndHots/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LotsAndHots/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,9 +554,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LotsAndHots.LotsAndHots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
