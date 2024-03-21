@@ -29,7 +29,7 @@ struct LoginView: View {
                 
                 Image("color_logo")
                     .frame(width: 40, height: 20)
-                    .padding(.bottom, .screenWidth * 0.012)
+                    .padding(.bottom, .screenWidth * 0.010)
                 
                 Spacer()
                     .frame(height: .screenWidth * 0.15)
