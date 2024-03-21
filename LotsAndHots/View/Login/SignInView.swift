@@ -29,7 +29,7 @@ struct SignInView: View {
                 Image("sign_in_top")
                     .resizable()
                     .scaledToFill()
-                    .frame(width: .screenWidth, height: .screenWidth)
+                    .frame(width: .screenWidth, height: .screenWidth - 10)
                 
                 Spacer()
             }
@@ -39,9 +39,9 @@ struct SignInView: View {
                 VStack(alignment: .leading) {
                     Text("Step into style: Your ultimate fashion destination awaits!")
                         .font(.customfont(.semibold, fontSize: 26))
-                        .foregroundColor(.black)
+                        .foregroundColor(.white)
                         .multilineTextAlignment(.leading)
-                        .padding(.bottom, 25)
+                        .padding(.bottom, 27)
                     
                     HStack {
                         Button {
@@ -65,6 +65,32 @@ struct SignInView: View {
                         
                         
                     }
+                    
+                    NavigationLink {
+                        LoginView()
+                    } label: {
+                        Text("Continue with Email Sign In")
+                            .font(.customfont(.semibold, fontSize: 18))
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame( minWidth: 0, maxWidth: .infinity, minHeight: 60, maxHeight: 60 )
+                    .background( Color(hex: "5383EC"))
+                    .cornerRadius(20)
+                    .padding(.bottom, 8 )
+                    
+                    NavigationLink {
+                        SignUpView()
+                    } label: {
+                        Text("Continue with Email Sign Up")
+                            .font(.customfont(.semibold, fontSize: 18))
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame( minWidth: 0, maxWidth: .infinity, minHeight: 60, maxHeight: 60 )
+                    .background( Color.primaryApp)
+                    .cornerRadius(20)
+                    .padding(.bottom, 8 )
                     
                     Divider()
                         .padding(.bottom)
@@ -112,9 +138,9 @@ struct SignInView: View {
                     .cornerRadius(20)
                     
                 }
-                .padding(.horizontal, 25)
+                .padding(.horizontal, 20)
                 .frame(width: .screenWidth, alignment: .leading)
-                .padding(.top, .topInsets + .screenWidth )
+                .padding(.top, .topInsets + .screenWidth * 0.65)
                 
                 
             }
