@@ -9,12 +9,20 @@ import SwiftUI
 
 @main
 struct LotsAndHotsApp: App {
-    var body: some Scene {
-        WindowGroup {
-            
-            NavigationView {
-                WelcomeView()
+    @StateObject var mainVM = MainViewModel.shared
+        
+        var body: some Scene {
+            WindowGroup {
+                
+                NavigationView {
+                    
+                    if mainVM.isUserLogin {
+                        MainTabView()
+                    }else{
+                        WelcomeView()
+                    }
+                }
+                
             }
         }
-    }
 }

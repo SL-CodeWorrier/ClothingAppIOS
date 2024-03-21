@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		839C30AF2BAC5AB100772C53 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839C30AE2BAC5AB100772C53 /* UserModel.swift */; };
+		839C30B22BAC63EB00772C53 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839C30B12BAC63EB00772C53 /* MainTabView.swift */; };
 		83B23E252BAADB3F00AAF263 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B23E242BAADB3F00AAF263 /* Launch Screen.storyboard */; };
 		83B23E272BAAE89800AAF263 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B23E262BAAE89800AAF263 /* UIExtension.swift */; };
 		83B23E292BAAFD4900AAF263 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B23E282BAAFD4900AAF263 /* RoundButton.swift */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		839C30AE2BAC5AB100772C53 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		839C30B12BAC63EB00772C53 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		83B23E242BAADB3F00AAF263 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		83B23E262BAAE89800AAF263 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 		83B23E282BAAFD4900AAF263 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -108,6 +110,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		839C30B02BAC63C800772C53 /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				839C30B12BAC63EB00772C53 /* MainTabView.swift */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
 		83CC17A22BAAC99200221970 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +195,7 @@
 		83CC17E22BAAD0BD00221970 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				839C30B02BAC63C800772C53 /* MainTab */,
 				83CC17E62BAAD17600221970 /* Login */,
 			);
 			path = View;
@@ -393,6 +404,7 @@
 				83E3368C2BABF0F6009FD46B /* ServiceCall.swift in Sources */,
 				83CC17E82BAAD19B00221970 /* WelcomeView.swift in Sources */,
 				83B23E342BAB682800AAF263 /* MainViewModel.swift in Sources */,
+				839C30B22BAC63EB00772C53 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
