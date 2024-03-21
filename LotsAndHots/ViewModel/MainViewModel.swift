@@ -93,6 +93,7 @@ class MainViewModel: ObservableObject {
             if let response = responseObj as? NSDictionary {
                 if response.value(forKey: KKey.status) as? String ?? "" == "1" {
                     
+                    
 //                    print(response);
                     self.txtUsername = ""
                     self.txtEmail = ""
