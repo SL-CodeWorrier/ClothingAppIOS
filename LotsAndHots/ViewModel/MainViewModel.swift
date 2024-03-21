@@ -19,6 +19,8 @@ class MainViewModel: ObservableObject {
     
     @Published var showError = false
     @Published var errorMessage = ""
+    @Published var isUserLogin: Bool = false
+    @Published var userObj: UserModel = UserModel(dict: [:])
     
     init() {
         
@@ -50,12 +52,7 @@ class MainViewModel: ObservableObject {
             if let response = responseObj as? NSDictionary {
                 if response.value(forKey: KKey.status) as? String ?? "" == "1" {
                     
-//                    print(response);
-                    self.txtEmail = ""
-                    self.txtPassword = ""
-                    self.isShowPassword = false
-                    self.errorMessage = response.value(forKey: KKey.message) as? String ?? "Success"
-                    self.showError = true
+                    self.setUserData(uDict: response.value(forKey: KKey.payload) as? NSDictionary ?? [:])
                     
                 }else{
                     self.errorMessage = response.value(forKey: KKey.message) as? String ?? "Fail"
@@ -92,17 +89,7 @@ class MainViewModel: ObservableObject {
         ServiceCall.post(parameter: [ "username": txtUsername, "email": txtEmail, "password": txtPassword, "dervice_token":"" ], path: Globs.SV_SIGN_UP) { responseObj in
             if let response = responseObj as? NSDictionary {
                 if response.value(forKey: KKey.status) as? String ?? "" == "1" {
-                    
-                    
-//                    print(response);
-                    self.txtUsername = ""
-                    self.txtEmail = ""
-                    self.txtPassword = ""
-                    self.isShowPassword = false
-                    
-                    self.errorMessage = response.value(forKey: KKey.message) as? String ?? "Success"
-                    self.showError = true
-                    
+                    self.setUserData(uDict: response.value(forKey: KKey.payload) as? NSDictionary ?? [:])
                 }else{
                     self.errorMessage = response.value(forKey: KKey.message) as? String ?? "Fail"
                     self.showError = true
@@ -113,6 +100,19 @@ class MainViewModel: ObservableObject {
             self.showError = true
         }
        
+    }
+    
+    func setUserData(uDict: NSDictionary) {
+        
+        Utils.UDSET(data: uDict, key: Globs.userPayload)
+        Utils.UDSET(data: true, key: Globs.userLogin)
+        self.userObj = UserModel(dict: uDict)
+        self.isUserLogin = true
+        
+        self.txtUsername = ""
+        self.txtEmail = ""
+        self.txtPassword = ""
+        self.isShowPassword = false
     }
     
 }

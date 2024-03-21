@@ -13,6 +13,10 @@ struct Globs {
     
     static let BASE_URL = "http://localhost:3001/api/app/"
     
+    static let userPayload = "user_payload"
+    
+    static let userLogin = "user_login"
+    
     static let SV_LOGIN = BASE_URL + "login"
     
     static let SV_SIGN_UP = BASE_URL + "sign_up"
