@@ -47,8 +47,9 @@ struct LoginView: View {
                     .padding(.bottom, .screenWidth * 0.1)
                 
                 
-                LineTextField(title: "Email", placeholder: "Enter your email address", txt: $loginVM.txtEmail, keyboardType: .emailAddress)
+                LineTextField( title: "Email", placholder: "Enter your email address", txt: $loginVM.txtEmail, keyboardType: .emailAddress)
                     .padding(.bottom, .screenWidth * 0.07)
+//                    .autocapitalization(.none)
                 
                 LineSecureField(title: "Password", placeholder: "Enter your password", txt: $loginVM.txtPassword, isShowPassword: $loginVM.isShowPassword)
                     .padding(.bottom, .screenWidth * 0.02)
@@ -64,6 +65,7 @@ struct LoginView: View {
                 .padding(.bottom, .screenWidth * 0.03)
                 
                 RoundButton(title: "Log In") {
+                    loginVM.serviceCallLogin()
                 }
                 .padding(.bottom, .screenWidth * 0.05)
                 
@@ -100,6 +102,9 @@ struct LoginView: View {
             }
             .padding(.top, .topInsets)
             .padding(.horizontal, 20)
+        }
+        .alert(isPresented: $loginVM.showError) {
+            Alert(title: Text(Globs.AppName), message: Text( loginVM.errorMessage ), dismissButton: .default(Text("Ok")))
         }
         .background(Color.white)
         .navigationTitle("")

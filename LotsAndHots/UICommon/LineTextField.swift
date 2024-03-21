@@ -10,7 +10,7 @@ import SwiftUI
 struct LineTextField: View {
     // MARK: - PROPERTY
     @State var title: String = "Title"
-    @State var placeholder: String = "Placeholder"
+    @State var placholder: String = "Placeholder"
     @Binding var txt: String
     @State var keyboardType: UIKeyboardType = .default
     
@@ -23,8 +23,9 @@ struct LineTextField: View {
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             
             
-            TextField(placeholder, text: $txt)
+            TextField(placholder, text: $txt)
                 .keyboardType(keyboardType)
+                .autocapitalization(.none)
                 .disableAutocorrection(true)
                 .frame(height: 40)
             
@@ -52,10 +53,12 @@ struct LineSecureField: View {
             if (isShowPassword) {
                 TextField(placeholder, text: $txt)
                     .disableAutocorrection(true)
+                    .autocapitalization(.none)
                     .modifier(ShowButton(isShow: $isShowPassword))
                     .frame(height: 40)
             } else {
                 SecureField(placeholder, text: $txt)
+                    .autocapitalization(.none)
                     .modifier(ShowButton(isShow: $isShowPassword))
                     .frame(height: 40)
             }
