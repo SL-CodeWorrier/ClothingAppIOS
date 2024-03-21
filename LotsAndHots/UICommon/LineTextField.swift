@@ -9,10 +9,36 @@ import SwiftUI
 
 struct LineTextField: View {
     // MARK: - PROPERTY
-    @Binding var txt: String
     @State var title: String = "Title"
     @State var placeholder: String = "Placeholder"
+    @Binding var txt: String
+    @State var keyboardType: UIKeyboardType = .default
     
+    // MARK: - BODY
+    var body: some View {
+        VStack {
+            Text(title)
+                .font(.customfont(.semibold, fontSize: 16))
+                .foregroundColor(.textTitle)
+                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+            
+            
+            TextField(placeholder, text: $txt)
+                .keyboardType(keyboardType)
+                .disableAutocorrection(true)
+                .frame(height: 40)
+            
+            Divider()
+        }
+    }
+}
+
+struct LineSecureField: View {
+    // MARK: - PROPERTY
+    @State var title: String = "Title"
+    @State var placeholder: String = "Placeholder"
+    @Binding var txt: String
+    @Binding var isShowPassword: Bool
     
     
     // MARK: - BODY
@@ -23,10 +49,21 @@ struct LineTextField: View {
                 .foregroundColor(.textTitle)
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             
-            TextField(placeholder, text: $txt)
+            if (isShowPassword) {
+                TextField(placeholder, text: $txt)
+                    .disableAutocorrection(true)
+                    .modifier(ShowButton(isShow: $isShowPassword))
+                    .frame(height: 40)
+            } else {
+                SecureField(placeholder, text: $txt)
+                    .modifier(ShowButton(isShow: $isShowPassword))
+                    .frame(height: 40)
+            }
+            
             
             Divider()
-        }    }
+        }
+    }
 }
 
 // MARK: - PREVIEW
