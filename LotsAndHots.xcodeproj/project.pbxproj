@@ -13,6 +13,8 @@
 		83B23E2B2BAAFF9000AAF263 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B23E2A2BAAFF9000AAF263 /* SignInView.swift */; };
 		83B23E2E2BAB2F2500AAF263 /* CountryPickerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B23E2D2BAB2F2500AAF263 /* CountryPickerUI.swift */; };
 		83B23E302BAB35B200AAF263 /* CountryPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 83B23E2F2BAB35B200AAF263 /* CountryPicker */; };
+		83B23E322BAB53C800AAF263 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B23E312BAB53C800AAF263 /* LoginView.swift */; };
+		83B23E342BAB682800AAF263 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B23E332BAB682800AAF263 /* MainViewModel.swift */; };
 		83CC17AF2BAAC99200221970 /* LotsAndHotsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC17AE2BAAC99200221970 /* LotsAndHotsApp.swift */; };
 		83CC17B32BAAC99300221970 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CC17B22BAAC99300221970 /* Assets.xcassets */; };
 		83CC17B62BAAC99300221970 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CC17B52BAAC99300221970 /* Preview Assets.xcassets */; };
@@ -24,6 +26,7 @@
 		83CC17DF2BAACDE800221970 /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83CC17DB2BAACDE800221970 /* Gilroy-Bold.ttf */; };
 		83CC17E02BAACDE800221970 /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83CC17DC2BAACDE800221970 /* Gilroy-Medium.ttf */; };
 		83CC17E82BAAD19B00221970 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC17E72BAAD19B00221970 /* WelcomeView.swift */; };
+		83E3368A2BABD444009FD46B /* LineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E336892BABD444009FD46B /* LineTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,8 @@
 		83B23E282BAAFD4900AAF263 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		83B23E2A2BAAFF9000AAF263 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		83B23E2D2BAB2F2500AAF263 /* CountryPickerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerUI.swift; sourceTree = "<group>"; };
+		83B23E312BAB53C800AAF263 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		83B23E332BAB682800AAF263 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		83CC17AB2BAAC99200221970 /* LotsAndHots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LotsAndHots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CC17AE2BAAC99200221970 /* LotsAndHotsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotsAndHotsApp.swift; sourceTree = "<group>"; };
 		83CC17B22BAAC99300221970 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,6 +69,7 @@
 		83CC17DC2BAACDE800221970 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
 		83CC17E12BAACF8100221970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		83CC17E72BAAD19B00221970 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		83E336892BABD444009FD46B /* LineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +189,7 @@
 		83CC17E42BAAD0FC00221970 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				83B23E332BAB682800AAF263 /* MainViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -193,6 +200,7 @@
 				83B23E262BAAE89800AAF263 /* UIExtension.swift */,
 				83B23E282BAAFD4900AAF263 /* RoundButton.swift */,
 				83B23E2D2BAB2F2500AAF263 /* CountryPickerUI.swift */,
+				83E336892BABD444009FD46B /* LineTextField.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -202,6 +210,7 @@
 			children = (
 				83CC17E72BAAD19B00221970 /* WelcomeView.swift */,
 				83B23E2A2BAAFF9000AAF263 /* SignInView.swift */,
+				83B23E312BAB53C800AAF263 /* LoginView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -348,11 +357,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				83B23E2E2BAB2F2500AAF263 /* CountryPickerUI.swift in Sources */,
+				83E3368A2BABD444009FD46B /* LineTextField.swift in Sources */,
+				83B23E322BAB53C800AAF263 /* LoginView.swift in Sources */,
 				83B23E292BAAFD4900AAF263 /* RoundButton.swift in Sources */,
 				83CC17AF2BAAC99200221970 /* LotsAndHotsApp.swift in Sources */,
 				83B23E2B2BAAFF9000AAF263 /* SignInView.swift in Sources */,
 				83B23E272BAAE89800AAF263 /* UIExtension.swift in Sources */,
 				83CC17E82BAAD19B00221970 /* WelcomeView.swift in Sources */,
+				83B23E342BAB682800AAF263 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
