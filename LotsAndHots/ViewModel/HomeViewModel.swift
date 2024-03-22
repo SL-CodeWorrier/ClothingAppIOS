@@ -22,12 +22,16 @@ class HomeViewModel: ObservableObject {
     @Published var listArr: [ProductModel] = []
     @Published var typeArr: [TypeModel] = []
     
+    init() {
+        serviceCallList()
+    }
+    
 //    @State var selected : Int = 0
     
     // MARK: - SERVICE CALL
     
     func serviceCallList() {
-        ServiceCall.post(parameter: [:], path: Globs.SV_HOME, isToken: true ) { responseObj in responseObj in
+        ServiceCall.post(parameter: [:], path: Globs.SV_HOME, isToken: true ) { responseObj in
             if let response = responseObj as? NSDictionary {
                 if response.value(forKey: KKey.status) as? String ?? "" == "1" {
                     

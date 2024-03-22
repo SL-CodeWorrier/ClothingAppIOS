@@ -15,6 +15,7 @@
 		83694EA82BAD43F7002D1AE2 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83694EA72BAD43F7002D1AE2 /* CategoryCell.swift */; };
 		83694EAA2BAD4BC0002D1AE2 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83694EA92BAD4BC0002D1AE2 /* ProductModel.swift */; };
 		83694EAC2BAD516A002D1AE2 /* TypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83694EAB2BAD516A002D1AE2 /* TypeModel.swift */; };
+		83694EAF2BAD6071002D1AE2 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 83694EAE2BAD6071002D1AE2 /* SDWebImageSwiftUI */; };
 		839C30AF2BAC5AB100772C53 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839C30AE2BAC5AB100772C53 /* UserModel.swift */; };
 		839C30B22BAC63EB00772C53 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839C30B12BAC63EB00772C53 /* MainTabView.swift */; };
 		839C30B42BAC7A2C00772C53 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839C30B32BAC7A2C00772C53 /* HomeViewModel.swift */; };
@@ -109,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83694EAF2BAD6071002D1AE2 /* SDWebImageSwiftUI in Frameworks */,
 				83B23E302BAB35B200AAF263 /* CountryPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +315,7 @@
 			name = LotsAndHots;
 			packageProductDependencies = (
 				83B23E2F2BAB35B200AAF263 /* CountryPicker */,
+				83694EAE2BAD6071002D1AE2 /* SDWebImageSwiftUI */,
 			);
 			productName = LotsAndHots;
 			productReference = 83CC17AB2BAAC99200221970 /* LotsAndHots.app */;
@@ -388,6 +391,7 @@
 			mainGroup = 83CC17A22BAAC99200221970;
 			packageReferences = (
 				83B23E2C2BAB26A500AAF263 /* XCRemoteSwiftPackageReference "CountryPicker" */,
+				83694EAD2BAD6071002D1AE2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 83CC17AC2BAAC99200221970 /* Products */;
 			projectDirPath = "";
@@ -802,6 +806,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		83694EAD2BAD6071002D1AE2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.1;
+			};
+		};
 		83B23E2C2BAB26A500AAF263 /* XCRemoteSwiftPackageReference "CountryPicker" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mobven/CountryPicker.git";
@@ -813,6 +825,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		83694EAE2BAD6071002D1AE2 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83694EAD2BAD6071002D1AE2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
 		83B23E2F2BAB35B200AAF263 /* CountryPicker */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 83B23E2C2BAB26A500AAF263 /* XCRemoteSwiftPackageReference "CountryPicker" */;

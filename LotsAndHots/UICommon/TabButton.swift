@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TabButton: View {
     
+
     @State var title: String = "Title"
     @State var icon: String = "shop_tab"
     var isSelect: Bool = false
@@ -19,20 +20,17 @@ struct TabButton: View {
             debugPrint("Tab Button Tap")
             didSelect()
         } label: {
-            VStack{
+            VStack {
                 Image(icon)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 25, height: 25)
                 
-                
                 Text(title)
                     .font(.customfont(.semibold, fontSize: 14))
-                
-                    
             }
         }
-        .foregroundColor(isSelect ? .primaryApp : .primaryText )
+        .foregroundColor(isSelect ? .primaryApp : .primaryText)
         .frame(minWidth: 0, maxWidth: .infinity)
     }
 }

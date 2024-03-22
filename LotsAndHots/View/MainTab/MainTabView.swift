@@ -18,18 +18,25 @@ struct MainTabView: View {
         
         ZStack {
             
-//            if(homeVM.selectTab == 0) {
-//                HomeView()
-//            }else if(homeVM.selectTab == 1) {
-//                ExploreView()
-//            }else if(homeVM.selectTab == 2) {
-//                MyCartView()
-//            }else if(homeVM.selectTab == 3) {
-//                FavouriteView()
-//            }else if(homeVM.selectTab == 4) {
-//                AccountView()
-//            }
-            
+                
+                if(homeVM.selectTab == 0) {
+//                    HomeView()
+                }else if(homeVM.selectTab == 1) {
+                    ExploreView()
+                }else if(homeVM.selectTab == 2) {
+                    ExploreView()
+                }else if(homeVM.selectTab == 3) {
+                    ExploreView()
+                }else if(homeVM.selectTab == 4) {
+                    ExploreView()
+                }
+    //                .onAppear {
+    //                    UIScrollView.appearance().isScrollEnabled = false
+    //                }
+    //            .tabViewStyle(.page(indexDisplayMode: .never))
+    //            .onChange(of: homeVM.selectTab) { newValue in
+    //                debugPrint("Sel Tab :\(newValue)")
+    //            }
             VStack {
                 
                 Spacer()
@@ -49,20 +56,17 @@ struct MainTabView: View {
                     }
                     
                     TabButton(title: "Explore", icon: "explore_tab", isSelect: homeVM.selectTab == 1) {
-                        
                         DispatchQueue.main.async {
-                             
+                            
                             withAnimation {
                                 homeVM.selectTab = 1
                             }
                         }
-                        
                     }
                     
                     TabButton(title: "Cart", icon: "cart_tab", isSelect: homeVM.selectTab == 2) {
-                        
                         DispatchQueue.main.async {
-                             
+                            
                             withAnimation {
                                 homeVM.selectTab = 2
                             }
@@ -70,24 +74,22 @@ struct MainTabView: View {
                     }
                     
                     TabButton(title: "Favourite", icon: "favourite_tab", isSelect: homeVM.selectTab == 3) {
-                        
                         DispatchQueue.main.async {
-                             
+                            
                             withAnimation {
                                 homeVM.selectTab = 3
                             }
                         }
                     }
-                                        
+                
                     TabButton(title: "Account", icon: "account_tab", isSelect: homeVM.selectTab == 4) {
                         DispatchQueue.main.async {
-                             
+                            
                             withAnimation {
                                 homeVM.selectTab = 4
                             }
                         }
                     }
-                    
                     
                 }
                 .padding(.top, 10)
@@ -96,13 +98,14 @@ struct MainTabView: View {
                 .background(Color.white)
                 .cornerRadius(15)
                 .shadow(color: Color.black.opacity(0.15), radius: 3, x: 0, y: -2)
+
             }
+            
         }
         .navigationTitle("")
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea()
-        
     }
     
     
@@ -115,6 +118,7 @@ struct MainTabView_Previews: PreviewProvider {
         NavigationView {
             MainTabView()
         }
+        
     }
 }
  
