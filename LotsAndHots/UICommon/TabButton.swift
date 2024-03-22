@@ -10,7 +10,7 @@ import SwiftUI
 struct TabButton: View {
     
     @State var title: String = "Title"
-    @State var icon: String = "store_tab"
+    @State var icon: String = "shop_tab"
     var isSelect: Bool = false
     var didSelect: (()->())
     

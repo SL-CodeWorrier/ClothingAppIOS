@@ -35,8 +35,10 @@ class ServiceCall {
             var request = URLRequest(url: URL(string: path)!,timeoutInterval: 20)
             request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
 
-//                        if(isToken) {
-//                            
+            if(isToken) {
+                request.addValue( MainViewModel.shared.userObj.authToken , forHTTPHeaderField: "access_token")
+            }
+//
 //            //                #if DEBUG
 //            //                request.addValue( "HFYsmcPickQlPmWMNUEZ" , forHTTPHeaderField: "access_token")
 //            //                #else
@@ -44,7 +46,7 @@ class ServiceCall {
 //            //                #endif
 //                            
 //                                           
-//                        }
+
             request.httpMethod = "POST"
             request.httpBody = parameterData as Data
             
