@@ -18,29 +18,32 @@ struct ProductCell: View {
     var body: some View {
         
         VStack{
-            WebImage(url: URL(string: pObj.image ))
+            
+            Image("shirt")
                 .resizable()
-                .indicator(.activity) // Activity Indicator
                 .transition(.fade(duration: 0.5))
                 .scaledToFit()
-                .frame(width: 100, height: 80)
+                .frame(width: 150, height: 150)
+                .cornerRadius(10)
+                .padding(.top, -20)
             
             Spacer()
             
-            Text(pObj.name)
+            Text("Shirt")
                 .font(.customfont(.bold, fontSize: 16))
                 .foregroundColor(.primaryText)
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             
-            Text("\(pObj.unitValue)\(pObj.unitName), price")
-                .font(.customfont(.medium, fontSize: 14))
+            Text("7pcs, price")
+                .font(.customfont(.semibold, fontSize: 16))
                 .foregroundColor(.secondaryText)
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                .padding(.bottom, 10)
             
             Spacer()
             
             HStack {
-                Text("$\(pObj.offerPrice ?? pObj.price, specifier: "%.2f" )")
+                Text("$5.99")
                     .font(.customfont(.semibold, fontSize: 18))
                     .foregroundColor(.primaryText)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
@@ -48,18 +51,59 @@ struct ProductCell: View {
                 Spacer()
                 
                 Button {
-                    
                     didAddCart?()
                 } label: {
                     Image("add")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 15, height: 15)
+                        .frame(width: 25, height: 25)
                 }
-                .frame(width: 40, height: 40)
-                .background( Color.primaryApp)
-                .cornerRadius(15)
+                .background(Color.primaryApp)
             }
+            
+            
+//            WebImage(url: URL(string: pObj.image ))
+//                .resizable()
+//                .indicator(.activity) // Activity Indicator
+//                .transition(.fade(duration: 0.5))
+//                .scaledToFit()
+//                .frame(width: 100, height: 80)
+//            
+//            Spacer()
+//            
+//            Text(pObj.name)
+//                .font(.customfont(.bold, fontSize: 16))
+//                .foregroundColor(.primaryText)
+//                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+//            
+//            Text("\(pObj.unitValue)\(pObj.unitName), price")
+//                .font(.customfont(.medium, fontSize: 14))
+//                .foregroundColor(.secondaryText)
+//                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+//            
+//            Spacer()
+//            
+//            HStack {
+//                Text("$\(pObj.offerPrice ?? pObj.price, specifier: "%.2f" )")
+//                    .font(.customfont(.semibold, fontSize: 18))
+//                    .foregroundColor(.primaryText)
+//                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+//                
+//                Spacer()
+//                
+//                Button {
+//                    
+//                    didAddCart?()
+//                } label: {
+//                    Image("add")
+//                        .resizable()
+//                        .scaledToFit()
+//                        .frame(width: 15, height: 15)
+//                }
+//                .frame(width: 40, height: 40)
+//                .background( Color.primaryApp)
+//                .cornerRadius(15)
+//            }
             
             
         }
