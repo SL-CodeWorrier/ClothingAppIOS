@@ -103,7 +103,7 @@ struct HomeView: View {
 //                }
 //                
 //                
-                SectionTitleAll(title: "Featured", titleAll: "See All") {
+                SectionTitleAll(title: "Accessories", titleAll: "See All") {
                                     
                 }
                 .padding(.horizontal, 20)
@@ -112,7 +112,7 @@ struct HomeView: View {
                     LazyHStack(spacing: 10) {
                         ForEach (0...5, id: \.self) { index in
                             
-                            ProductCell {
+                            CategoryCell(color: Color(hex: "F8A44C")) {
                                 
                             }
                         }

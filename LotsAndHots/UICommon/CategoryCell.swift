@@ -18,19 +18,30 @@ struct CategoryCell: View {
     var body: some View {
         HStack{
             
-            WebImage(url: URL(string: tObj.image ))
+            Image("acc4")
                 .resizable()
-                .indicator(.activity) // Activity Indicator
-                .transition(.fade(duration: 0.5))
                 .scaledToFit()
                 .frame(width: 70, height: 70)
             
-        
-            
-            Text(tObj.name)
+            Text("Watch")
                 .font(.customfont(.bold, fontSize: 16))
                 .foregroundColor(.primaryText)
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                
+            
+//            WebImage(url: URL(string: tObj.image ))
+//                .resizable()
+//                .indicator(.activity) // Activity Indicator
+//                .transition(.fade(duration: 0.5))
+//                .scaledToFit()
+//                .frame(width: 70, height: 70)
+//            
+//        
+//            
+//            Text(tObj.name)
+//                .font(.customfont(.bold, fontSize: 16))
+//                .foregroundColor(.primaryText)
+//                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             
         }
         .padding(15)
