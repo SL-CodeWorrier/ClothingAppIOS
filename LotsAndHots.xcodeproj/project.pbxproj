@@ -158,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				83694E9D2BAD0110002D1AE2 /* ExploreView.swift */,
-				839C30AE2BAC5AB100772C53 /* UserModel.swift */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -269,6 +268,7 @@
 		83CC17E32BAAD0EC00221970 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				839C30AE2BAC5AB100772C53 /* UserModel.swift */,
 				83694EA92BAD4BC0002D1AE2 /* ProductModel.swift */,
 				83694EAB2BAD516A002D1AE2 /* TypeModel.swift */,
 				8358EA122BAFE01E00D8D065 /* NutritionModel.swift */,
