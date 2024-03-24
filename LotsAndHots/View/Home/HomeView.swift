@@ -13,7 +13,7 @@ struct HomeView: View {
     
     // MARK: - BODY
     var body: some View {
-        Text("Hello world")
+        
         ZStack {
             ScrollView {
                 VStack {
@@ -53,19 +53,19 @@ struct HomeView: View {
                 .padding(.horizontal, 20)
                 
                 ScrollView(.horizontal, showsIndicators: false ) {
-                    LazyHStack(spacing: 10) {
-                        ForEach (0...5, id: \.self) { index in
+                    LazyHStack(spacing: 15) {
+                        ForEach (homeVM.offerArr, id: \.id) {
+                            pObj in
                             
-                            ProductCell {
-                                
-                            }
+                            ProductCell(pObj: pObj, didAddCart: {
+
+                            })
                         }
                     }
                     .padding(.horizontal, 20)
                     .padding(.vertical, 4)
                 }
-//                
-//                
+              
                 SectionTitleAll(title: "Best Selling", titleAll: "See All") {
                                     
                 }
@@ -73,36 +73,19 @@ struct HomeView: View {
                 
                 ScrollView(.horizontal, showsIndicators: false ) {
                     LazyHStack(spacing: 10) {
-                        ForEach (0...5, id: \.self) { index in
+                        ForEach (homeVM.bestArr, id: \.id) {
+                            pObj in
                             
-                            ProductCell {
+                            ProductCell(pObj: pObj, didAddCart: {
                                 
-                            }
+                            })
                         }
                     }
                     .padding(.horizontal, 20)
                     .padding(.vertical, 4)
                 }
             
-//                ScrollView(.horizontal, showsIndicators: false ) {
-//                    LazyHStack(spacing: 15) {
-//                        ForEach (homeVM.bestArr, id: \.id) {
-//                            pObj in
-//                            
-//                            ProductCell(pObj: pObj, didAddCart: {
-////                                CartViewModel.serviceCallAddToCart(prodId: pObj.prodId, qty: 1) { isDone, msg in
-////                                    
-////                                    self.homeVM.errorMessage = msg
-////                                    self.homeVM.showError = true
-////                                }
-//                            })
-//                        }
-//                    }
-//                    .padding(.horizontal, 20)
-//                    .padding(.vertical, 4)
-//                }
-//                
-//                
+               
                 SectionTitleAll(title: "Accessories", titleAll: "See All") {
                                     
                 }
@@ -110,12 +93,15 @@ struct HomeView: View {
                 
                 ScrollView(.horizontal, showsIndicators: false ) {
                     LazyHStack(spacing: 10) {
-                        ForEach (0...5, id: \.self) { index in
+                        ForEach (homeVM.typeArr, id: \.id) {
+                            tObj in
                             
-                            CategoryCell(color: Color(hex: "F8A44C")) {
+                            CategoryCell(tObj: tObj) {
                                 
                             }
                         }
+                        
+                        
                     }
                     .padding(.horizontal, 20)
                     .padding(.vertical, 4)
@@ -125,55 +111,25 @@ struct HomeView: View {
                 
                 ScrollView(.horizontal, showsIndicators: false ) {
                     LazyHStack(spacing: 10) {
-                        ForEach (0...5, id: \.self) { index in
+                        ForEach (homeVM.listArr, id: \.id) {
+                            pObj in
                             
-                            ProductCell {
+                            ProductCell(pObj: pObj, didAddCart: {
                                 
-                            }
+                            })
                         }
                     }
                     .padding(.horizontal, 20)
                     .padding(.vertical, 4)
                 }
-                .padding(.bottom, 15)
+                .padding(.bottom, 30)
              
-//                ScrollView(.horizontal, showsIndicators: false ) {
-//                    LazyHStack(spacing: 15) {
-//                        ForEach (homeVM.typeArr, id: \.id) {
-//                            tObj in
-//                            
-//                            CategoryCell(tObj: tObj) {
-//                                
-//                            }
-//                        }
-//                    
-//                    }
-//                    .padding(.horizontal, 20)
-//                    .padding(.vertical, 4)
-//                }
-//                .padding(.bottom, 8)
-//                
-//                
-//                ScrollView(.horizontal, showsIndicators: false ) {
-//                    LazyHStack(spacing: 15) {
-//                        ForEach (homeVM.listArr, id: \.id) {
-//                            pObj in
-//                            
-//                            ProductCell(pObj: pObj, didAddCart: {
-////                                CartViewModel.serviceCallAddToCart(prodId: pObj.prodId, qty: 1) { isDone, msg in
-////                                    
-////                                    self.homeVM.errorMessage = msg
-////                                    self.homeVM.showError = true
-////                                }
-//                            })
-//                        }
-//                    }
-//                    .padding(.horizontal, 20)
-//                    .padding(.vertical, 4)
-//                }
-//                .padding(.bottom, .bottomInsets + 60)
+
             }
         }
+        .alert(isPresented: $homeVM.showError, content: {
+            Alert(title: Text(Globs.AppName), message: Text(homeVM.errorMessage), dismissButton: .default(Text("OK")) )
+        })
         .ignoresSafeArea()
     }
 }
@@ -182,7 +138,10 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        NavigationView {
+            HomeView()
+        }
+        
     }
 }
 
