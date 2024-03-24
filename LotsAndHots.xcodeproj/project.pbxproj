@@ -33,6 +33,7 @@
 		83B23E302BAB35B200AAF263 /* CountryPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 83B23E2F2BAB35B200AAF263 /* CountryPicker */; };
 		83B23E322BAB53C800AAF263 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B23E312BAB53C800AAF263 /* LoginView.swift */; };
 		83B23E342BAB682800AAF263 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B23E332BAB682800AAF263 /* MainViewModel.swift */; };
+		83BDF40E2BB00B7E000A312E /* FavouriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BDF40D2BB00B7E000A312E /* FavouriteViewModel.swift */; };
 		83CC17AF2BAAC99200221970 /* LotsAndHotsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC17AE2BAAC99200221970 /* LotsAndHotsApp.swift */; };
 		83CC17B32BAAC99300221970 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CC17B22BAAC99300221970 /* Assets.xcassets */; };
 		83CC17B62BAAC99300221970 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CC17B52BAAC99300221970 /* Preview Assets.xcassets */; };
@@ -93,6 +94,7 @@
 		83B23E2D2BAB2F2500AAF263 /* CountryPickerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerUI.swift; sourceTree = "<group>"; };
 		83B23E312BAB53C800AAF263 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		83B23E332BAB682800AAF263 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		83BDF40D2BB00B7E000A312E /* FavouriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewModel.swift; sourceTree = "<group>"; };
 		83CC17AB2BAAC99200221970 /* LotsAndHots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LotsAndHots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CC17AE2BAAC99200221970 /* LotsAndHotsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotsAndHotsApp.swift; sourceTree = "<group>"; };
 		83CC17B22BAAC99300221970 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 				83B23E332BAB682800AAF263 /* MainViewModel.swift */,
 				839C30B32BAC7A2C00772C53 /* HomeViewModel.swift */,
 				8358EA102BAFDDA000D8D065 /* ProductDetailViewModel.swift */,
+				83BDF40D2BB00B7E000A312E /* FavouriteViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				83694EAC2BAD516A002D1AE2 /* TypeModel.swift in Sources */,
 				83694EAA2BAD4BC0002D1AE2 /* ProductModel.swift in Sources */,
 				839C30B72BAC7B9B00772C53 /* HomeView.swift in Sources */,
+				83BDF40E2BB00B7E000A312E /* FavouriteViewModel.swift in Sources */,
 				83B23E292BAAFD4900AAF263 /* RoundButton.swift in Sources */,
 				83CC17AF2BAAC99200221970 /* LotsAndHotsApp.swift in Sources */,
 				83E336912BAC0C5F009FD46B /* UIKitExtension.swift in Sources */,
