@@ -10,75 +10,86 @@ import SDWebImageSwiftUI
 
 struct ProductCell: View {
     // MARK: - PROPERTY
+    
     @State var pObj: ProductModel = ProductModel(dict: [:])
     @State var width:Double = 180.0
     var didAddCart: ( ()->() )?
     
     // MARK: - BODY
+    
     var body: some View {
-        
-        VStack{
+        NavigationLink {
+            ProductDetailView(detailVM:  ProductDetailViewModel(prodObj: pObj) )
+        } label: {
             
-            WebImage(url: URL(string: pObj.image ))
-                .resizable()
-                .indicator(.activity) // Activity Indicator
-                .transition(.fade(duration: 0.5))
-                .scaledToFit()
-
-                .frame(width: 150, height: 150)
             
-
-            
-            Spacer()
-            
-            Text(pObj.name)
-                .font(.customfont(.bold, fontSize: 16))
-                .foregroundColor(.primaryText)
-                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-            
-
-            
-            Text("\(pObj.unitValue), price")
-                .font(.customfont(.medium, fontSize: 14))
-                .foregroundColor(.secondaryText)
-                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-            
-
-            
-            Spacer()
-            
-            HStack {
+            VStack{
                 
-                Text("$\(pObj.offerPrice ?? pObj.price, specifier: "%.2f" )")
-                    .font(.customfont(.semibold, fontSize: 18))
-                    .foregroundColor(.primaryText)
-                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                WebImage(url: URL(string: pObj.image ))
+                    .resizable()
+                    .indicator(.activity) // Activity Indicator
+                    .transition(.fade(duration: 0.5))
+                    .scaledToFit()
                 
-
+                    .frame(width: 150, height: 150)
+                
+                
                 
                 Spacer()
                 
-                Button {
-                    didAddCart?()
-                } label: {
-                    Image("add")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 25, height: 25)
+                Text(pObj.name)
+                    .font(.customfont(.bold, fontSize: 16))
+                    .foregroundColor(.primaryText)
+                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                
+                
+                
+                Text("\(pObj.unitValue), price")
+                    .font(.customfont(.medium, fontSize: 14))
+                    .foregroundColor(.secondaryText)
+                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                
+                
+                
+                Spacer()
+                
+                HStack {
+                    
+                    Text("$\(pObj.offerPrice ?? pObj.price, specifier: "%.2f" )")
+                        .font(.customfont(.semibold, fontSize: 18))
+                        .foregroundColor(.primaryText)
+                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                    
+                    
+                    
+                    Spacer()
+                    
+                    
+                    
+                    Button {
+                        didAddCart?()
+                    } label: {
+                        Image("add")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 25, height: 25)
+                    }
+                    .frame(width: 40, height: 40)
+                    .background(Color.primaryApp)
+                    .cornerRadius(15)
                 }
-                .background(Color.primaryApp)
+                
+                
+                
+                
             }
-            
-
-            
-            
+            .padding(15)
+            .frame(width: 180, height: 250)
+            .overlay(
+                RoundedRectangle(cornerRadius: 16)
+                    .stroke(  Color.placeholder.opacity(0.5), lineWidth: 1)
+            )
         }
-        .padding(15)
-        .frame(width: 180, height: 230)
-        .overlay(
-            RoundedRectangle(cornerRadius: 16)
-                .stroke(  Color.placeholder.opacity(0.5), lineWidth: 1)
-        )
     }
 }
 
