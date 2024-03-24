@@ -93,7 +93,7 @@ struct ProductCell_Previews: PreviewProvider {
                                               "brand_id": 1,
                                               "type_id": 1,
                                               "name": "Shirt",
-                                              "detail": "banana, fruit of the genus Musa, of the family Musaceae, one of the most important fruit crops of the world. The banana is grown in the tropics, and, though it is most widely consumed in those regions, it is valued worldwide for its flavour, nutritional value, and availability throughout the year",
+                                              "detail": "Selecting the right men's shirt depends on the occasion, your personal style, and comfort preferences. Dress shirts are a must-have for formal events, while casual shirts offer a laid-back yet stylish appearance. Polo shirts and T-shirts are versatile options that can be paired with jeans, chinos, or even shorts for a relaxed ensemble.",
 //                                              "unit_name": "pcs",
                                               "unit_value": "7",
 //                                              "nutrition_weight": "200g",
