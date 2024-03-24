@@ -43,7 +43,7 @@ struct ProductDetailView: View {
                             .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                         
                         Button {
-                            detailVM.isFav = !detailVM.isFav
+                            detailVM.serviceCallAddRemoveFav()
                         } label: {
                             
                             Image( detailVM.isFav ? "favourite" : "fav"  )
