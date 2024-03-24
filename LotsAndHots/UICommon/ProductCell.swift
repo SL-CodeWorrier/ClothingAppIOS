@@ -84,7 +84,7 @@ struct ProductCell: View {
                 
             }
             .padding(15)
-            .frame(width: 180, height: 250)
+            .frame(width: width, height: 250)
             .overlay(
                 RoundedRectangle(cornerRadius: 16)
                     .stroke(  Color.placeholder.opacity(0.5), lineWidth: 1)

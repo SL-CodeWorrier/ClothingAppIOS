@@ -40,14 +40,12 @@ struct ExploreView: View {
                     LazyVGrid(columns: colums, spacing: 20) {
                         ForEach(explorVM.listArr, id: \.id) {
                             cObj in
+        
                             
-                            ExploreCategoryCell(cObj: cObj)
-                                .aspectRatio( 0.95, contentMode: .fill)
-                            
-//                            NavigationLink(destination: ExploreItemsView(itemsVM: ExploreItemViewModel(catObj: cObj) ) ) {
-//                                ExploreCategoryCell(cObj: cObj)
-//                                    .aspectRatio( 0.95, contentMode: .fill)
-//                            }
+                            NavigationLink(destination: ExploreItemsView(itemsVM: ExploreItemViewModel(catObj: cObj) ) ) {
+                                ExploreCategoryCell(cObj: cObj)
+                                    .aspectRatio( 0.95, contentMode: .fill)
+                            }
                             
                         }
                     }
