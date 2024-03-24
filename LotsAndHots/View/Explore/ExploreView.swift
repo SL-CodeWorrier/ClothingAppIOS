@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ExploreView: View {
-//    @StateObject var explorVM = ExploreViewModel.shared
+    @StateObject var explorVM = ExploreViewModel.shared
     @State var txtSearch: String = ""
     
     var colums =  [
@@ -38,15 +38,18 @@ struct ExploreView: View {
                 
                 ScrollView {
                     LazyVGrid(columns: colums, spacing: 20) {
-//                        ForEach(explorVM.listArr, id: \.id) {
-//                            cObj in
-//                            
+                        ForEach(explorVM.listArr, id: \.id) {
+                            cObj in
+                            
+                            ExploreCategoryCell(cObj: cObj)
+                                .aspectRatio( 0.95, contentMode: .fill)
+                            
 //                            NavigationLink(destination: ExploreItemsView(itemsVM: ExploreItemViewModel(catObj: cObj) ) ) {
 //                                ExploreCategoryCell(cObj: cObj)
 //                                    .aspectRatio( 0.95, contentMode: .fill)
 //                            }
-//                            
-//                        }
+                            
+                        }
                     }
                     .padding(.horizontal, 20)
                     .padding(.vertical, 10)
@@ -54,6 +57,7 @@ struct ExploreView: View {
                 }
             }
         }
+        .ignoresSafeArea()
     }
 }
 
