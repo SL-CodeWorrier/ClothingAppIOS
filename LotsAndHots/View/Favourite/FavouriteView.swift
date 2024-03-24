@@ -17,18 +17,20 @@ struct FavouriteView: View {
             
             ScrollView{
                 LazyVStack {
-//                    ForEach( favVM.listArr , id: \.id, content: {
-//                        fObj in
-//                        
-//                        FavouriteRow(fObj: fObj)
-//                        
-//                    })
+                    ForEach( favVM.listArr , id: \.id, content: {
+                        fObj in
+                        
+                        FavouriteRow(fObj: fObj)
+                       
+                        
+                    })
                 }
                 .padding(20)
-                .padding(.top, .topInsets + 46)
-                .padding(.bottom, .bottomInsets + 60)
+//                .padding(.top, .topInsets + 46)
+//                .padding(.bottom, .bottomInsets + 60)
             
             }
+            .padding(.top, .topInsets + 46)
             
             VStack {
                 

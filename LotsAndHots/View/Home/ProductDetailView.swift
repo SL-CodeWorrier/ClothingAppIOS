@@ -285,6 +285,9 @@ struct ProductDetailView: View {
             .padding(.top, .topInsets)
             .padding(.horizontal, 20)
         }
+        .alert(isPresented: $detailVM.showError, content: {
+            Alert(title: Text(Globs.AppName), message: Text(detailVM.errorMessage)  , dismissButton: .default(Text("Ok"))  )
+        })
         .navigationTitle("")
         .navigationBarBackButtonHidden(true)
         .navigationBarHidden(true)
