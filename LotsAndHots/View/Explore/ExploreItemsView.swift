@@ -54,13 +54,12 @@ struct ExploreItemsView: View {
                         ForEach(itemsVM.listArr, id: \.id) {
                             pObj in
                             
-                            
                             ProductCell( pObj: pObj, width: .infinity ) {
-//                                CartViewModel.serviceCallAddToCart(prodId: pObj.prodId, qty: 1) { isDone, msg in
-//                                    
-//                                    self.itemsVM.errorMessage = msg
-//                                    self.itemsVM.showError = true
-//                                }
+                                CartViewModel.serviceCallAddToCart(prodId: pObj.prodId, qty: 1) { isDone, msg in
+                                    
+                                    self.itemsVM.errorMessage = msg
+                                    self.itemsVM.showError = true
+                                }
                             }
                             
                         }
@@ -74,6 +73,9 @@ struct ExploreItemsView: View {
             .padding(.horizontal, 20)
             
         }
+        .alert(isPresented: $itemsVM.showError, content: {
+            Alert(title: Text(Globs.AppName), message: Text(itemsVM.errorMessage), dismissButton: .default(Text("OK")) )
+        })
         .navigationTitle("")
         .navigationBarBackButtonHidden(true)
         .navigationBarHidden(true)

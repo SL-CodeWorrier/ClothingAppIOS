@@ -243,13 +243,14 @@ struct ProductDetailView: View {
                 .padding(.horizontal, 20)
                 
                 RoundButton(title: "Add To Basket") {
-//                    CartViewModel.serviceCallAddToCart(prodId: detailVM.pObj.prodId, qty: detailVM.qty) { isDone, msg  in
-//                        
-//                        detailVM.qty = 1
-//                        
-//                        self.detailVM.errorMessage = msg
-//                        self.detailVM.showError = true
-//                    }
+//                    CartViewModel.shared.serviceCallUpdateQty(cObj: cObj, newQty: cObj.qty - 1)
+                    CartViewModel.serviceCallAddToCart(prodId: detailVM.pObj.prodId, qty: detailVM.qty) { isDone, msg  in
+                        
+                        detailVM.qty = 1
+                        
+                        self.detailVM.errorMessage = msg
+                        self.detailVM.showError = true
+                    }
                 }
                 .padding( 20)
                 
