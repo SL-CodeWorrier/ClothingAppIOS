@@ -19,9 +19,7 @@ struct CartItemModel:  Identifiable, Equatable {
     var brandName: String = ""
     var detail: String = ""
     var name: String = ""
-//    var unitName: String = ""
     var unitValue: String = ""
-//    var nutritionWeight: String = ""
     var image: String = ""
     var catName: String = ""
     var typeName: String = ""
@@ -34,7 +32,6 @@ struct CartItemModel:  Identifiable, Equatable {
     var isFav: Bool = false
     
     init(dict: NSDictionary) {
-//        self.id = dict.value(forKey: "cart_id") as? Int ?? 0
         self.cartId = dict.value(forKey: "cart_id") as? Int ?? 0
         self.userId = dict.value(forKey: "user_id") as? Int ?? 0
         self.qty = dict.value(forKey: "qty") as? Int ?? 0
@@ -46,9 +43,7 @@ struct CartItemModel:  Identifiable, Equatable {
         
         self.detail = dict.value(forKey: "detail") as? String ?? ""
         self.name = dict.value(forKey: "name") as? String ?? ""
-//        self.unitName = dict.value(forKey: "unit_name") as? String ?? ""
         self.unitValue = dict.value(forKey: "unit_value") as? String ?? ""
-//        self.nutritionWeight = dict.value(forKey: "nutrition_weight") as? String ?? ""
         self.image = dict.value(forKey: "image") as? String ?? ""
         self.catName = dict.value(forKey: "cat_name") as? String ?? ""
         self.brandName = dict.value(forKey: "brand_name") as? String ?? ""

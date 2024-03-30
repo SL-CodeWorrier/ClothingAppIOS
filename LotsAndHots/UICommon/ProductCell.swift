@@ -96,23 +96,25 @@ struct ProductCell: View {
 // MARK: - PREVIEW
 struct ProductCell_Previews: PreviewProvider {
     static var previews: some View {
-        ProductCell(pObj: ProductModel(dict: ["offer_price": 2.49,
-                                              "start_date": "2023-07-30T18:30:00.000Z",
-                                              "end_date": "2023-08-29T18:30:00.000Z",
-                                              "prod_id": 5,
+        ProductCell(pObj: ProductModel(dict: ["prod_id": 5,
                                               "cat_id": 1,
                                               "brand_id": 1,
                                               "type_id": 1,
                                               "name": "Shirt",
                                               "detail": "Selecting the right men's shirt depends on the occasion, your personal style, and comfort preferences. Dress shirts are a must-have for formal events, while casual shirts offer a laid-back yet stylish appearance. Polo shirts and T-shirts are versatile options that can be paired with jeans, chinos, or even shorts for a relaxed ensemble.",
-//                                              "unit_name": "pcs",
-                                              "unit_value": "7",
-//                                              "nutrition_weight": "200g",
-                                              "price": 2.99,
-                                              "image": "http://localhost:3001/img/product/shirt1.png",
+                                              "unit_value": "1",
+                                              "price": 5.99,
+                                              "created_date": "2024-03-26T17:19:11.000Z",
+                                              "modify_date": "2024-03-27T01:20:43.000Z",
                                               "cat_name": "Shirt",
-                                              "type_name": "bag",
-                                              "is_fav": 1])) {
+                                              "is_fav": 0,
+                                              "brand_name": "bigs",
+                                              "type_name": "Small",
+                                              "offer_price": 5.99,
+                                              "image": "http://localhost:3001/img/product/2024032712383738375GllLZg9Hl.png",
+                                              "start_date": "2024-03-27 00:00:00",
+                                              "end_date": "2024-04-27 00:00:00",
+                                              "is_offer_active": 1])) {
             
         }
     }

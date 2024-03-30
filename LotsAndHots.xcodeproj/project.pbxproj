@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8358EA0F2BAFD9DC00D8D065 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8358EA0E2BAFD9DC00D8D065 /* ProductDetailView.swift */; };
 		8358EA112BAFDDA000D8D065 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8358EA102BAFDDA000D8D065 /* ProductDetailViewModel.swift */; };
-		8358EA132BAFE01E00D8D065 /* NutritionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8358EA122BAFE01E00D8D065 /* NutritionModel.swift */; };
 		8358EA152BAFE10400D8D065 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8358EA142BAFE10400D8D065 /* ImageModel.swift */; };
 		8358EA182BB0091A00D8D065 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8358EA172BB0091A00D8D065 /* FavouriteView.swift */; };
 		83694E9E2BAD0110002D1AE2 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83694E9D2BAD0110002D1AE2 /* ExploreView.swift */; };
@@ -21,6 +20,10 @@
 		83694EAA2BAD4BC0002D1AE2 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83694EA92BAD4BC0002D1AE2 /* ProductModel.swift */; };
 		83694EAC2BAD516A002D1AE2 /* TypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83694EAB2BAD516A002D1AE2 /* TypeModel.swift */; };
 		83694EAF2BAD6071002D1AE2 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 83694EAE2BAD6071002D1AE2 /* SDWebImageSwiftUI */; };
+		836B63D02BB5F36300108ECD /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 836B63CC2BB5F36300108ECD /* Gilroy-SemiBold.ttf */; };
+		836B63D12BB5F36300108ECD /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 836B63CD2BB5F36300108ECD /* Gilroy-Medium.ttf */; };
+		836B63D22BB5F36300108ECD /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 836B63CE2BB5F36300108ECD /* Gilroy-Regular.ttf */; };
+		836B63D32BB5F36300108ECD /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 836B63CF2BB5F36300108ECD /* Gilroy-Bold.ttf */; };
 		837B30102BB01418008D1A20 /* FavouriteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B300F2BB01418008D1A20 /* FavouriteRow.swift */; };
 		837B30122BB043AE008D1A20 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B30112BB043AE008D1A20 /* ExploreViewModel.swift */; };
 		837B30142BB04502008D1A20 /* ExploreCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B30132BB04502008D1A20 /* ExploreCategoryModel.swift */; };
@@ -50,10 +53,6 @@
 		83CC17C02BAAC99300221970 /* LotsAndHotsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC17BF2BAAC99300221970 /* LotsAndHotsTests.swift */; };
 		83CC17CA2BAAC99300221970 /* LotsAndHotsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC17C92BAAC99300221970 /* LotsAndHotsUITests.swift */; };
 		83CC17CC2BAAC99300221970 /* LotsAndHotsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC17CB2BAAC99300221970 /* LotsAndHotsUITestsLaunchTests.swift */; };
-		83CC17DD2BAACDE800221970 /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83CC17D92BAACDE800221970 /* Gilroy-SemiBold.ttf */; };
-		83CC17DE2BAACDE800221970 /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83CC17DA2BAACDE800221970 /* Gilroy-Regular.ttf */; };
-		83CC17DF2BAACDE800221970 /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83CC17DB2BAACDE800221970 /* Gilroy-Bold.ttf */; };
-		83CC17E02BAACDE800221970 /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83CC17DC2BAACDE800221970 /* Gilroy-Medium.ttf */; };
 		83CC17E82BAAD19B00221970 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CC17E72BAAD19B00221970 /* WelcomeView.swift */; };
 		83E3368A2BABD444009FD46B /* LineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E336892BABD444009FD46B /* LineTextField.swift */; };
 		83E3368C2BABF0F6009FD46B /* ServiceCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E3368B2BABF0F6009FD46B /* ServiceCall.swift */; };
@@ -82,7 +81,6 @@
 /* Begin PBXFileReference section */
 		8358EA0E2BAFD9DC00D8D065 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		8358EA102BAFDDA000D8D065 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
-		8358EA122BAFE01E00D8D065 /* NutritionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionModel.swift; sourceTree = "<group>"; };
 		8358EA142BAFE10400D8D065 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		8358EA172BB0091A00D8D065 /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
 		83694E9D2BAD0110002D1AE2 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
@@ -93,6 +91,10 @@
 		83694EA72BAD43F7002D1AE2 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		83694EA92BAD4BC0002D1AE2 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		83694EAB2BAD516A002D1AE2 /* TypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeModel.swift; sourceTree = "<group>"; };
+		836B63CC2BB5F36300108ECD /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gilroy-SemiBold.ttf"; path = "LotsAndHots/Assets.xcassets/Font/Gilroy-SemiBold.ttf"; sourceTree = SOURCE_ROOT; };
+		836B63CD2BB5F36300108ECD /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gilroy-Medium.ttf"; path = "LotsAndHots/Assets.xcassets/Font/Gilroy-Medium.ttf"; sourceTree = SOURCE_ROOT; };
+		836B63CE2BB5F36300108ECD /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gilroy-Regular.ttf"; path = "LotsAndHots/Assets.xcassets/Font/Gilroy-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		836B63CF2BB5F36300108ECD /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gilroy-Bold.ttf"; path = "LotsAndHots/Assets.xcassets/Font/Gilroy-Bold.ttf"; sourceTree = SOURCE_ROOT; };
 		837B300F2BB01418008D1A20 /* FavouriteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteRow.swift; sourceTree = "<group>"; };
 		837B30112BB043AE008D1A20 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 		837B30132BB04502008D1A20 /* ExploreCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCategoryModel.swift; sourceTree = "<group>"; };
@@ -124,10 +126,6 @@
 		83CC17C52BAAC99300221970 /* LotsAndHotsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LotsAndHotsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CC17C92BAAC99300221970 /* LotsAndHotsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotsAndHotsUITests.swift; sourceTree = "<group>"; };
 		83CC17CB2BAAC99300221970 /* LotsAndHotsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotsAndHotsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		83CC17D92BAACDE800221970 /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
-		83CC17DA2BAACDE800221970 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
-		83CC17DB2BAACDE800221970 /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
-		83CC17DC2BAACDE800221970 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
 		83CC17E12BAACF8100221970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		83CC17E72BAAD19B00221970 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		83E336892BABD444009FD46B /* LineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTextField.swift; sourceTree = "<group>"; };
@@ -272,10 +270,10 @@
 		83CC17D82BAAC9F700221970 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				83CC17DB2BAACDE800221970 /* Gilroy-Bold.ttf */,
-				83CC17DC2BAACDE800221970 /* Gilroy-Medium.ttf */,
-				83CC17DA2BAACDE800221970 /* Gilroy-Regular.ttf */,
-				83CC17D92BAACDE800221970 /* Gilroy-SemiBold.ttf */,
+				836B63CF2BB5F36300108ECD /* Gilroy-Bold.ttf */,
+				836B63CD2BB5F36300108ECD /* Gilroy-Medium.ttf */,
+				836B63CE2BB5F36300108ECD /* Gilroy-Regular.ttf */,
+				836B63CC2BB5F36300108ECD /* Gilroy-SemiBold.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -299,7 +297,6 @@
 				839C30AE2BAC5AB100772C53 /* UserModel.swift */,
 				83694EA92BAD4BC0002D1AE2 /* ProductModel.swift */,
 				83694EAB2BAD516A002D1AE2 /* TypeModel.swift */,
-				8358EA122BAFE01E00D8D065 /* NutritionModel.swift */,
 				8358EA142BAFE10400D8D065 /* ImageModel.swift */,
 				837B30132BB04502008D1A20 /* ExploreCategoryModel.swift */,
 				837B301D2BB072C9008D1A20 /* CartItemModel.swift */,
@@ -474,11 +471,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				83CC17B62BAAC99300221970 /* Preview Assets.xcassets in Resources */,
-				83CC17E02BAACDE800221970 /* Gilroy-Medium.ttf in Resources */,
-				83CC17DD2BAACDE800221970 /* Gilroy-SemiBold.ttf in Resources */,
-				83CC17DF2BAACDE800221970 /* Gilroy-Bold.ttf in Resources */,
+				836B63D22BB5F36300108ECD /* Gilroy-Regular.ttf in Resources */,
+				836B63D02BB5F36300108ECD /* Gilroy-SemiBold.ttf in Resources */,
+				836B63D32BB5F36300108ECD /* Gilroy-Bold.ttf in Resources */,
+				836B63D12BB5F36300108ECD /* Gilroy-Medium.ttf in Resources */,
 				83CC17B32BAAC99300221970 /* Assets.xcassets in Resources */,
-				83CC17DE2BAACDE800221970 /* Gilroy-Regular.ttf in Resources */,
 				83B23E252BAADB3F00AAF263 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,7 +530,6 @@
 				83B23E272BAAE89800AAF263 /* UIExtension.swift in Sources */,
 				8358EA152BAFE10400D8D065 /* ImageModel.swift in Sources */,
 				83694EA42BAD3004002D1AE2 /* SectionTitleAll.swift in Sources */,
-				8358EA132BAFE01E00D8D065 /* NutritionModel.swift in Sources */,
 				8358EA182BB0091A00D8D065 /* FavouriteView.swift in Sources */,
 				83694EA22BAD1B67002D1AE2 /* SearchTextField.swift in Sources */,
 				83E3368C2BABF0F6009FD46B /* ServiceCall.swift in Sources */,

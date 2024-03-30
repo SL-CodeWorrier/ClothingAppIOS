@@ -45,7 +45,7 @@ class Utils {
     class func UDSET(data: Any, key: String) {
             UserDefaults.standard.set(data, forKey: key)
             UserDefaults.standard.synchronize()
-        }
+    }
         
     class func UDValue( key: String) -> Any {
        return UserDefaults.standard.value(forKey: key) as Any

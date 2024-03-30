@@ -54,7 +54,7 @@ struct HomeView: View {
                 
                 ScrollView(.horizontal, showsIndicators: false ) {
                     LazyHStack(spacing: 15) {
-                        ForEach (homeVM.bestArr, id: \.id) {
+                        ForEach (homeVM.offerArr, id: \.id) {
                             pObj in
                             
                             ProductCell(pObj: pObj, didAddCart: {
@@ -95,7 +95,7 @@ struct HomeView: View {
                 }
             
                
-                SectionTitleAll(title: "Accessories", titleAll: "See All") {
+                SectionTitleAll(title: "Categories", titleAll: "See All") {
                                     
                 }
                 .padding(.horizontal, 20)

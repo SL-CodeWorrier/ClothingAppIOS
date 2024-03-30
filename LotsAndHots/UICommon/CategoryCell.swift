@@ -55,8 +55,8 @@ struct CategoryCell: View {
 struct CategoryCell_Previews: PreviewProvider {
     static var previews: some View {
         CategoryCell(tObj: TypeModel(dict: [ "type_id": 1,
-                                             "type_name": "bag",
-                                             "image": "http://localhost:3001/img/type/bag.png",
+                                             "type_name": "Small",
+                                             "image": "http://localhost:3001/img/type/20240327130249249uJajVK77RI.png",
                                              "color": "F8A44C" ]))
     }
 }
